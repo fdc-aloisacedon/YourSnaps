@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Your Snaps</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="your_snaps">Your Snaps</string>
+    <string name="continue_btn">Continue</string>
+    <string name="take_a_snap">Take a Snap</string>
+</resources>
