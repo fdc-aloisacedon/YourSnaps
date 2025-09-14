@@ -36,12 +36,14 @@ class WelcomeFragment : Fragment(R.layout.fragment_welcome) {
 
             if (!permissionManager.hasPermission(Manifest.permission.CAMERA)){
                 cameraPermissionLauncher.launch(Manifest.permission.CAMERA)
+            } else {
+                parentFragmentManager.beginTransaction()
+                    .replace(R.id.mainFragmentContainer, SnapsFragment())
+                    .addToBackStack(null)
+                    .commit()
             }
 
-            parentFragmentManager.beginTransaction()
-                .replace(R.id.mainFragmentContainer, SnapsFragment())
-                .addToBackStack(null)
-                .commit()
+
         }
     }
 
